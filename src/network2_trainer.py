@@ -4,7 +4,7 @@ training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
 print "Complete!"
 import network2
 size = input("Please set the size of network: ")
-net = network2.Network(list(size), cost=network2.CrossEntropyCost)
+net = network2.Network(list(size))
 epochs, mini_batch_size, eta, lamda = input("Please set the iteration times, \
 mini-batch size, learning rate and lamda: ")
 # net.large_weight_initializer()
