@@ -6,7 +6,7 @@ import network2
 size = input("Please set the size of network: ")
 net = network2.Network(list(size))
 epochs, mini_batch_size, eta, lamda, momenta = input("Please set the \
-iteration times, mini-batch size, learning rate, lamda and momentum: ")
+iterations, mini-batch size, learning rate, lamda and momentum: ")
 # net.large_weight_initializer()
 print "Well done, start training..."
 net.SGD(training_data, epochs, mini_batch_size, eta,
